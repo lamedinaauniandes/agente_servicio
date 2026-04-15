@@ -13,18 +13,18 @@ Para el diseño del agente se eligió **LangGraph** sobre otras alternativas, co
 
 ![grafo agente](agente.jpg)
 
+### Dependencias
+- Python 3.12.3
+- Para instalar las dependencias, ejecutar en la terminal:
+  `pip install -r requirements.txt`
 
 ## Instrucciones
-    - cree un ambiente `app_agent`
+    - cree un ambiente `python -m venv env`
     - instale dependencias
     - puede levantar el servidor ubicandose en la raiz y ejecutando `python main.py`
     - observe que la base de datos vectorial esta ubicado en: `vectordatabase\chroma_db` luego no necesitas ejucutar el procesos de ingestar los documentos.
     - Si desea insertar documentos ejecute  `python load_documents.py`
 
-### Dependencias
-- Python 3.12.3
-- Para instalar las dependencias, ejecutar en la terminal:
-  `pip install -r requirements.txt`
 
 ### Variables de entorno
 Se debe crear un archivo `.env` con las variables necesarias para el funcionamiento del agente. En este caso, no se considera una práctica insegura, ya que el archivo no contiene contraseñas ni otros secretos.
