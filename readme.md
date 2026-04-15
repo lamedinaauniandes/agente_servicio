@@ -8,11 +8,18 @@ Se requiere acelerar la atención a los clientes mediante un sistema de consulta
 ### Solución
 Se desarrolló una API con **FastAPI** que invoca un agente definido en el módulo `app_agent`. Dicho agente fue construido con **LangGraph** y **LangChain**, e incorpora una herramienta de consulta para recuperar los documentos relevantes previamente indexados en una base de datos vectorial implementada con **Chroma**.
 
-![grafo agente](agente.jpg)
-
 Para el diseño del agente se eligió **LangGraph** sobre otras alternativas, como `create_react_agent` de LangChain (`from langchain.agents.react.agent import create_react_agent`). Aunque ambos enfoques están inspirados en la arquitectura **ReAct**, **LangGraph** ofrece un mayor control sobre el flujo de ejecución y facilita la incorporación de nuevas reglas de negocio en futuras versiones.
 
+
+![grafo agente](agente.jpg)
+
+
 ## Instrucciones
+    - cree un ambiente `app_agent`
+    - instale dependencias
+    - puede levantar el servidor ubicandose en la raiz y ejecutando `python main.py`
+    - observe que la base de datos vectorial esta ubicado en: `vectordatabase\chroma_db` luego no necesitas ejucutar el procesos de ingestar los documentos.
+    - Si desea insertar documentos ejecute  `python load_documents.py`
 
 ### Dependencias
 - Python 3.12.3

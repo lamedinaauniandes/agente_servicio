@@ -5,9 +5,11 @@ from langchain_ollama import OllamaEmbeddings
 from langchain_chroma import Chroma
 from langchain_core.documents import Document 
 
-load_dotenv(override=True)
-persist_directory = os.getenv("CHROMA_PERSIST_DIRECTORY")
+path_base_directory = Path(os.getcwd())
 
+path_env = os.path.join(path_base_directory,".env")
+load_dotenv(override=True,dotenv_path=path_env)
+persist_directory = os.path.join(path_base_directory,os.getenv("CHROMA_PERSIST_DIRECTORY"))
 
 def ingest_embeddigns_chroma(path_document: str,persist_directory:str ) -> bool: 
     """
@@ -21,7 +23,7 @@ def ingest_embeddigns_chroma(path_document: str,persist_directory:str ) -> bool:
 
     try: 
         
-        embeddings = OllamaEmbeddings(model="embeddinggemma") ### modelo de embeddings
+        embeddings = OllamaEmbeddings(model=os.getenv("CHROMA_MODEL_EMBEDDINGS")) ### modelo de embeddings
 
         docs = [] 
         with open(path_document,"r",encoding="utf-8") as f: 
