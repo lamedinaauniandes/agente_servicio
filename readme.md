@@ -40,6 +40,6 @@ El script para cargar los documentos en la base de datos vectorial Chroma se enc
 
 `\vectordatabase\ingest\load_documents.py`
 
-#### Pruebas unitarias
+### Pruebas unitarias
  - El código de las pruebas unitarise las encuentra en `tests\test_consultar.py`
  - El resultado de las pruebas en `tests\resultados_tests.txt`
