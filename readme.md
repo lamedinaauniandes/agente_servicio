@@ -8,7 +8,7 @@ Se requiere acelerar la atención a los clientes mediante un sistema de consulta
 ### Solución
 Se desarrolló una API con **FastAPI** que invoca un agente definido en el módulo `app_agent`. Dicho agente fue construido con **LangGraph** y **LangChain**, e incorpora una herramienta de consulta para recuperar los documentos relevantes previamente indexados en una base de datos vectorial implementada con **Chroma**.
 
-![grafo agente](agente.png)
+![grafo agente](agente.jpg)
 
 Para el diseño del agente se eligió **LangGraph** sobre otras alternativas, como `create_react_agent` de LangChain (`from langchain.agents.react.agent import create_react_agent`). Aunque ambos enfoques están inspirados en la arquitectura **ReAct**, **LangGraph** ofrece un mayor control sobre el flujo de ejecución y facilita la incorporación de nuevas reglas de negocio en futuras versiones.
 
