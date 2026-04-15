@@ -32,7 +32,7 @@ def ingest_embeddigns_chroma(path_document: str,persist_directory:str ) -> bool:
             documents = docs,
             embedding= embeddings, 
             collection_name= "acuerdos_nivel_servicio", 
-            persist_directory = persist_directory,       ### la memoria queda persistente
+            persist_directory = persist_directory,       ### la memoria queda persistente en disco duro
         )
         return True
     except Exception as ex: 

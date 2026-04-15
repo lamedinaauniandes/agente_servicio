@@ -28,8 +28,6 @@ class Respuesta(BaseModel):
 
 parser_pydantic_response = PydanticToolsParser(tools=[Respuesta])
 
-print("debug 1 \n",os.getenv("OLLAMA_MODEL_LLM"),"\n",path_env)
-
 llm = ChatOllama(model=os.getenv("OLLAMA_MODEL_LLM"))
 
 agent_reasoning_prompt = ChatPromptTemplate.from_messages([

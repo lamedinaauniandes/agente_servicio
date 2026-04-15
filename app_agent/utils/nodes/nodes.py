@@ -22,7 +22,7 @@ def reasoning_node(state:MessageGraph):
     Nodo de razonamiento para el agente, toma la
     desición si investigar o responder
     """
-    print("-"*50,"reasoning_node")
+    print("-"*50,"reasoning_node 2")
     
     response = agent_reasoning_chain.invoke({
         "messages":state["messages"]
