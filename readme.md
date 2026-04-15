@@ -19,11 +19,11 @@ Para el diseño del agente se eligió **LangGraph** sobre otras alternativas, co
   `pip install -r requirements.txt`
 
 ## Instrucciones
-    - cree un ambiente `python -m venv env`
-    - instale dependencias
-    - puede levantar el servidor ubicandose en la raiz y ejecutando `python main.py`
-    - observe que la base de datos vectorial esta ubicado en: `vectordatabase\chroma_db` luego no necesitas ejucutar el procesos de ingestar los documentos.
-    - Si desea insertar documentos ejecute  `python load_documents.py`
+- cree un ambiente `python -m venv env`
+- instale dependencias
+- puede levantar el servidor ubicandose en la raiz y ejecutando `python main.py`
+- observe que la base de datos vectorial esta ubicado en: `vectordatabase\chroma_db` luego no necesitas ejucutar el procesos de ingestar los documentos.
+- Si desea insertar documentos ejecute  `python load_documents.py`
 
 
 ### Variables de entorno
