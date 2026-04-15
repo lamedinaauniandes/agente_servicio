@@ -1,0 +1,22 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.3, pytest-9.0.3, pluggy-1.6.0 -- C:\Users\ASUS\Laboratorio\Landing\Interviews\tests\itstk\env\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\ASUS\Laboratorio\Landing\Interviews\tests\itstk
+plugins: anyio-4.13.0, langsmith-0.7.30
+collecting ... collected 2 items
+
+tests/test_consultar.py::test_consulta_responde_200 PASSED               [ 50%]
+tests/test_consultar.py::test_consulta_retorna_campos_esperados PASSED   [100%]
+
+============================== warnings summary ===============================
+app\routers\chat.py:24
+  C:\Users\ASUS\Laboratorio\Landing\Interviews\tests\itstk\app\routers\chat.py:24: DeprecationWarning: 
+          on_event is deprecated, use lifespan event handlers instead.
+  
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+          
+    @router.on_event("startup")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 2 passed, 1 warning in 12.27s ========================

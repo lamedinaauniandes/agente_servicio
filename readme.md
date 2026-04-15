@@ -39,3 +39,7 @@ Se debe crear un archivo `.env` con las variables necesarias para el funcionamie
 El script para cargar los documentos en la base de datos vectorial Chroma se encuentra en:
 
 `\vectordatabase\ingest\load_documents.py`
+
+#### Pruebas unitarias
+ - El código de las pruebas unitarise las encuentra en `tests\test_consultar.py`
+ - El resultado de las pruebas en `tests\resultados_tests.txt`
